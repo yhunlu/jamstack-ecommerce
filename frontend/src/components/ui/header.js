@@ -65,9 +65,20 @@ export default function Header({ categories }) {
     { node: { name: "Contact Us", strapiId: "contact", link: "/contact" } },
   ]
 
+  const activeIndex = () => {
+    const found = routes.indexOf(
+      routes.filter(
+        ({ node: { name, link } }) =>
+          (link || `/${name.toLowerCase()}`) === window.location.pathname
+      )[0]
+    )
+
+    return found === -1 ? false : found
+  }
+
   const tabs = (
     <Tabs
-      value={0}
+      value={activeIndex()}
       classes={{ indicator: classes.coloredIndicator, root: classes.tabs }}
     >
       {routes.map(route => (
@@ -92,8 +103,15 @@ export default function Header({ categories }) {
       classes={{ paper: classes.drawer }}
     >
       <List disablePadding>
-        {routes.map(route => (
-          <ListItem divider button key={route.node.strapiId}>
+        {routes.map((route, i) => (
+          <ListItem
+            selected={activeIndex() === i}
+            component={Link}
+            to={route.node.link || `/${route.node.name.toLowerCase()}`}
+            divider
+            button
+            key={route.node.strapiId}
+          >
             <ListItemText
               classes={{ primary: classes.listItemText }}
               primary={route.node.name}
@@ -105,7 +123,12 @@ export default function Header({ categories }) {
   )
 
   const actions = [
-    { icon: search, alt: "search", visible: true },
+    {
+      icon: search,
+      alt: "search",
+      visible: true,
+      onClick: () => console.log("search"),
+    },
     { icon: cart, alt: "cart", visible: true, link: "/cart" },
     { icon: account, alt: "account", visible: !matchesMD, link: "/account" },
     {
@@ -119,7 +142,11 @@ export default function Header({ categories }) {
   return (
     <AppBar color="transparent" elevation={0}>
       <Toolbar>
-        <Button classes={{ root: classes.logoContainer }}>
+        <Button
+          component={Link}
+          to="/"
+          classes={{ root: classes.logoContainer }}
+        >
           <Typography variant="h1">
             <span className={classes.logoText}>ÇRŞ</span> BZR
           </Typography>
@@ -128,7 +155,12 @@ export default function Header({ categories }) {
         {actions.map(action => {
           if (action.visible) {
             return (
-              <IconButton key={action.alt} component={Link} to={action.link}>
+              <IconButton
+                onClick={action.onClick}
+                key={action.alt}
+                component={action.onClick ? undefined : Link}
+                to={action.onClick ? undefined : action.link}
+              >
                 <img
                   className={classes.icon}
                   src={action.icon}
