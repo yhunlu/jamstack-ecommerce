@@ -92,7 +92,7 @@
       "ddd": 0,
       "ind": 2,
       "ty": 5,
-      "nm": "yunlu@carsibazaar:~/$ 4",
+      "nm": "zachary@var-x:~/$ 4",
       "sr": 1,
       "ks": {
         "o": { "a": 0, "k": 100, "ix": 11 },
@@ -109,7 +109,7 @@
               "s": {
                 "s": 24,
                 "f": "CourierNewPS-BoldMT",
-                "t": "yunlu@carsibazaar:~/$",
+                "t": "zachary@var-x:~/$",
                 "j": 0,
                 "tr": 0,
                 "lh": 28.8,
@@ -732,7 +732,7 @@
       "ddd": 0,
       "ind": 13,
       "ty": 5,
-      "nm": "scp world@root:/luxury.tar /luxury.tar ",
+      "nm": "scp world@udemy:/luxury.tar /luxury.tar ",
       "cl": "tar tar",
       "sr": 1,
       "ks": {
@@ -750,7 +750,7 @@
               "s": {
                 "s": 24,
                 "f": "CourierNewPS-BoldMT",
-                "t": "scp world@root:/luxury.tar /luxury.tar ",
+                "t": "scp world@udemy:/luxury.tar /luxury.tar ",
                 "j": 0,
                 "tr": 0,
                 "lh": 28.8,
@@ -802,7 +802,7 @@
       "ddd": 0,
       "ind": 14,
       "ty": 5,
-      "nm": "yunlu@carsibazaar:~/$ 3",
+      "nm": "zachary@var-x:~/$ 3",
       "sr": 1,
       "ks": {
         "o": { "a": 0, "k": 100, "ix": 11 },
@@ -819,7 +819,7 @@
               "s": {
                 "s": 24,
                 "f": "CourierNewPS-BoldMT",
-                "t": "yunlu@carsibazaar:~/$",
+                "t": "zachary@var-x:~/$",
                 "j": 0,
                 "tr": 0,
                 "lh": 28.8,
@@ -983,7 +983,7 @@
       "ddd": 0,
       "ind": 17,
       "ty": 5,
-      "nm": "yunlu@carsibazaar:~/$ 5",
+      "nm": "zachary@var-x:~/$ 5",
       "sr": 1,
       "ks": {
         "o": { "a": 0, "k": 100, "ix": 11 },
@@ -1000,7 +1000,7 @@
               "s": {
                 "s": 24,
                 "f": "CourierNewPS-BoldMT",
-                "t": "yunlu@carsibazaar:~/$",
+                "t": "zachary@var-x:~/$",
                 "j": 0,
                 "tr": 0,
                 "lh": 28.8,
@@ -1219,7 +1219,7 @@
       "ddd": 0,
       "ind": 22,
       "ty": 5,
-      "nm": "yunlu@carsibazaar:~/$",
+      "nm": "zachary@var-x:~/$",
       "sr": 1,
       "ks": {
         "o": { "a": 0, "k": 100, "ix": 11 },
@@ -1236,7 +1236,7 @@
               "s": {
                 "s": 24,
                 "f": "CourierNewPS-BoldMT",
-                "t": "yunlu@carsibazaar:~/$",
+                "t": "zachary@var-x:~/$",
                 "j": 0,
                 "tr": 0,
                 "lh": 28.8,
